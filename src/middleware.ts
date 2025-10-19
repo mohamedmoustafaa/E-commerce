@@ -1,10 +1,9 @@
 import { getToken } from "next-auth/jwt";
-import { RouteMatcher } from "next/dist/server/route-matchers/route-matcher";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function middleware(request: NextRequest) {
 
-let token = await getToken({req :request })
+const token = await getToken({req :request })
  if(token){
 
   if(request.nextUrl.pathname === '/login' || request.nextUrl.pathname === '/register' ){

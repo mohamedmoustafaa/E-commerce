@@ -166,7 +166,7 @@ export default function AllOrdersPage() {
         <Card className="p-12 text-center">
           <Package className="w-16 h-16 text-gray-400 mx-auto mb-4" />
           <h3 className="text-lg font-semibold text-gray-900 mb-2">No Orders</h3>
-          <p className="text-gray-600 mb-4">You haven't placed any orders yet</p>
+          <p className="text-gray-600 mb-4">You haven&apos;t placed any orders yet</p>
           <Button onClick={() => router.push('/')}>
             Start Shopping
           </Button>

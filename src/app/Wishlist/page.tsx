@@ -40,7 +40,7 @@ export default function Wishlist() {
       setProducts([]);
       setNumberOfWishlistIcon(0);
     }
-  } catch (err) {
+  } catch  {
     setProducts([]);
     setNumberOfWishlistIcon(0);
   } finally {

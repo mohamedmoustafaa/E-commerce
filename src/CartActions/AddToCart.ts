@@ -10,7 +10,7 @@ import MyToken from "@/Utilities/MyToken"
     if(!token){
         throw new Error("please login to be able to add product")
     }     
-  let res = await fetch(`https://ecommerce.routemisr.com/api/v1/cart`, {
+  const res = await fetch(`https://ecommerce.routemisr.com/api/v1/cart`, {
   method: "POST",
   headers: {
     token: String(token),   // 👈 force it to string
@@ -21,7 +21,7 @@ import MyToken from "@/Utilities/MyToken"
   })
 });
 
-  let payload = await res.json();
+  const payload = await res.json();
   return payload
    }
    catch(err){
