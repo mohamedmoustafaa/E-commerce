@@ -1,21 +1,17 @@
 import React from "react";
 import GetProductsByBrand from "@/api/GetSpecificBrand";
 import SingleProducts from "@/app/_component/SingleProducts/SingleProducts";
+import { ProductType } from "@/Types/Product.t";   
 
-
-interface Product {
-  id: string;
-  title: string;
-  imageCover: string;
-  price: number;
-  category: {
-    name: string;
+interface BrandProductsProps {
+  params: {
+    id: string;
   };
-  ratingsAverage: number;
 }
 
-export default async function BrandProducts({ params }: { params: { id: string } }) {
-  const products = await GetProductsByBrand(params.id);
+export default async function BrandProducts({ params }: BrandProductsProps) {
+
+  const products: ProductType[] = await GetProductsByBrand(params.id);
 
   return (
     <div className="container w-[80%] mx-auto my-12">
@@ -25,10 +21,10 @@ export default async function BrandProducts({ params }: { params: { id: string }
 
       <div className="flex flex-wrap justify-center">
         {products.length > 0 ? (
-          products.map((product: Product) => (
+          products.map((product) => (
             <div
               className="xl:w-1/5 w-full md:w-1/2 lg:w-1/4"
-              key={product.id}
+              key={product._id} 
             >
               <SingleProducts product={product} />
             </div>
