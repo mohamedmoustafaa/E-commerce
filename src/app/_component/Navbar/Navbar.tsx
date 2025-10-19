@@ -3,11 +3,13 @@ import Link from 'next/link';
 import React, { useContext, useState } from 'react';
 import { signOut, useSession } from "next-auth/react";
 import { CartContext } from '@/context/CartIconCounter';
-import { WishlistContext } from '@/context/WishlistIconCounter'; // ✅ استدعاء الكونتكست الجديد
+import { WishlistContext } from '@/context/WishlistIconCounter'; 
 
 export default function Navbar() {
-  const { numberOfCartIcon } = useContext(CartContext);
-  const wishlistContext = useContext(WishlistContext); // ✅ استخدم كونتكست الويش ليست
+ const cartContext = useContext(CartContext);
+const numberOfCartIcon = cartContext?.numberOfCartIcon ?? 0;
+
+  const wishlistContext = useContext(WishlistContext); 
   const { numberOfWishlistIcon } = wishlistContext || { numberOfWishlistIcon: 0 };
 
   const { data: session, status } = useSession();
