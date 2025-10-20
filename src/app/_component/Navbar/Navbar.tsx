@@ -57,10 +57,14 @@ const numberOfCartIcon = cartContext?.numberOfCartIcon ?? 0;
           {/* Right Section */}
           <ul className='flex gap-6 items-center'>
             {!session ? (
-              <li><Link href="/register" className='text-gray-600 hover:text-emerald-600'>Sign Up</Link></li>
+             
+
+              <li className='flex gap-4'>
+                <Link href="/login" className='text-gray-600 hover:text-emerald-600'>Login</Link>
+                <Link href="/register" className='text-gray-600 hover:text-emerald-600'>Sign Up</Link>
+                </li>
             ) : (
               <>
-                {/* Wishlist Icon ❤️ */}
                 <li className="text-2xl relative">
                   <Link href="/Wishlist">
                     <i className="fa-solid fa-heart text-gray-600 hover:text-emerald-600"></i>
