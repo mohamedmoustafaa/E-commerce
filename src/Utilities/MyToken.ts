@@ -12,7 +12,6 @@ export default async function MyToken(){
 
    const token = await decode({token: decodedToken, secret: process.env.NEXTAUTH_SECRET!});
 
-   console.log(token);
    
    
    

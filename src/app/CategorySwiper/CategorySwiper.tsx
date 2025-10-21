@@ -7,7 +7,6 @@ import { CategoryType } from '@/Types/Category.t';
 import Image from 'next/image';
 
 export default function CategorySwiper( {data} : {data: CategoryType[]} ) {
-    console.log(data);
     
   return <>
   <div className='w-full mx-auto'>

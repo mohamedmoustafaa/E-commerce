@@ -20,13 +20,11 @@ export default function WishlistContextProvider({ children }: WishlistContextPro
   async function getUserWishlist() {
     try {
       const res = await GetLoggedWishlistUser();
-      console.log(res);
 
       if (res.status === "success") {
         setNumberOfWishlistIcon(res.data.length); 
       }
-    } catch (err) {
-      console.log(err);
+    } catch  {  
     }
   }
 

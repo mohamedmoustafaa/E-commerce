@@ -30,7 +30,6 @@ export default function Login() {
       callbackUrl: "/",
     })
 
-    console.log(response);
 
     if (response?.ok) {
       toast.success("You are logged in successfully", { position: "top-center", duration: 2000 })

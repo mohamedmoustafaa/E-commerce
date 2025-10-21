@@ -20,7 +20,6 @@ export default function CartContextProvider({ children }: CartContextProviderPro
   async function getUserCart() {
     try {
       const res = await getLoggedUserCart();
-      console.log(res);
 
       if (res.status === "success") {
         let sum = 0;
@@ -29,8 +28,7 @@ export default function CartContextProvider({ children }: CartContextProviderPro
         });
         setnumberOfCartIcon(sum);
       }
-    } catch (err) {
-      console.log(err);
+    } catch  {
     }
   }
 

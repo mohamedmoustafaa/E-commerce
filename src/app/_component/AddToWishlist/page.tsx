@@ -9,7 +9,6 @@ export default function AddWishlist({ id }: { id: string }) {
 
   async function AddWishList(id: string) {
     const res = await AddToWishlist(id);
-    console.log(res);
 
     if (res.status === "success") {
       toast.success("Product added to wishlist successfully", {

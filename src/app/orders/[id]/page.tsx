@@ -88,13 +88,10 @@ export default function OrderDetailsPage() {
         }
         
         const data: ApiResponse = await response.json();
-        console.log('Order data:', data);
-        console.log('Cart items:', data.data?.cartItems);
         
         setOrder(data.data || null);
         
-      } catch (err) {
-        console.error('Error fetching order:', err);
+      } catch  {
         toast.error('Failed to load order details', { 
           position: 'top-center', 
           duration: 3000 

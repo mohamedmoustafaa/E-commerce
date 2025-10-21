@@ -20,8 +20,8 @@ export default function CategoriesPage() {
         } else {
           setCategories([]);
         }
-      } catch (error) {
-        console.error("Error fetching categories:", error);
+      } catch  {
+        
         setCategories([]);
       } finally {
         setLoading(false);

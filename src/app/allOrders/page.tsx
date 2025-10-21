@@ -79,7 +79,7 @@ export default function AllOrdersPage() {
             const payload = JSON.parse(atob(tokenData.split(".")[1])) as TokenPayload;
             userId = payload.id || payload.userId || payload.sub || null;
           } catch (e) {
-            console.error("Error parsing JWT:", e);
+            console.error( e);
           }
         }
 

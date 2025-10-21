@@ -23,7 +23,6 @@ export default function ForgetPassword() {
         `https://ecommerce.routemisr.com/api/v1/auth/forgotPasswords`,
         values
       )
-      console.log(res);
       
 
       if (res?.data?.statusMsg === "success") {

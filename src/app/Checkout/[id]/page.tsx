@@ -14,7 +14,6 @@ import CashPayment from '@/ChekoutActions/CashPay'
 export default function Ceckout() {
 
   const {id} : {id : string} = useParams();
-  console.log(id);
   
 
   const router = useRouter()

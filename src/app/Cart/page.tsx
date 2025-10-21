@@ -27,10 +27,8 @@ export default function Cart() {
   async function gerUsserCart(){
    try{
      const res = await getLoggedUserCart()
-    console.log(res);
  
      if(res.status === "success"){
-     console.log(res);
      setprice(res.data.totalCartPrice);
     setproducts(res.data.products);
      setloading(false)
@@ -137,7 +135,7 @@ export default function Cart() {
           <Image
   src={product.product.imageCover}
   alt={product.product.title}
-  width={128} // مساوية تقريباً لـ w-32
+  width={128} 
   height={128}
   className="w-16 md:w-32 max-w-full max-h-full object-contain rounded-lg h-auto w-auto"
 />

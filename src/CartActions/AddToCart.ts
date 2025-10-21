@@ -8,14 +8,17 @@ import MyToken from "@/Utilities/MyToken"
      const token = await MyToken();
       
     if(!token){
-        throw new Error("please login to be able to add product")
-    }     
+        return {
+        success: false,
+        message: "Please login to add product",
+      };
+  }     
   const res = await fetch(`https://ecommerce.routemisr.com/api/v1/cart`, {
   method: "POST",
   headers: {
-    token: String(token),   // 👈 force it to string
+    token: String(token),   
     "Content-Type": "application/json"
-  } as HeadersInit,          // 👈 علشان TS يفهم إن ده HeadersInit
+  } as HeadersInit,          
   body: JSON.stringify({
     productId: id
   })
