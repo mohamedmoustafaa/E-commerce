@@ -4,15 +4,17 @@ import { CheckoutSchemaType } from "@/schema/Chekout.schema";
 import MyToken from "@/Utilities/MyToken";
 
 function getBaseUrl() {
-    if (process.env.NEXT_PUBLIC_BASE_URL) {
-        return process.env.NEXT_PUBLIC_BASE_URL;
-    }
-    if (process.env.NODE_ENV === "development") {
-        return "http://localhost:3000";
-    }
-    return `https://${process.env.VERCEL_URL || "your-project.vercel.app"}`;
-}
+  if (process.env.NEXT_PUBLIC_BASE_URL) {
+    return process.env.NEXT_PUBLIC_BASE_URL;
+  }
 
+  if (process.env.NODE_ENV === "development") {
+    return "http://localhost:3000";
+  }
+
+  // في حالة التشغيل على vercel
+  return `https://${process.env.VERCEL_URL}`;
+}
 
 export default async function OnlinePayment(CartID : string , url = getBaseUrl() , formValues :CheckoutSchemaType){
     const token = await MyToken()
