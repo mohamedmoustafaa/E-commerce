@@ -12,7 +12,7 @@ function getBaseUrl() {
     return "http://localhost:3000";
   }
 
-   return `https://${process.env.VERCEL_URL || "e-commerce-beta-six-61.vercel.app"}`;
+  return "https://e-commerce-eight-alpha-43.vercel.app";
 }
 
 export default async function OnlinePayment(
