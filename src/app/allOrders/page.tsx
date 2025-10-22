@@ -103,6 +103,8 @@ export default function AllOrdersPage() {
                 "Content-Type": "application/json",
               },
             }
+          
+            
           );
 
           if (!generalResponse.ok) {
