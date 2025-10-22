@@ -13,7 +13,7 @@ function getBaseUrl() {
   }
 
   // في حالة التشغيل على vercel
-  return `https://${process.env.VERCEL_URL}`;
+  return `https://e-commerce-beta-six-61.vercel.app`;
 }
 
 export default async function OnlinePayment(CartID : string , url = getBaseUrl() , formValues :CheckoutSchemaType){
@@ -21,6 +21,7 @@ export default async function OnlinePayment(CartID : string , url = getBaseUrl()
         if(!token){
             throw new Error("Please login first")
         }
+        
         const res = await fetch(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${CartID}?url=${url}`,{
             method : "POST",
             headers: {
