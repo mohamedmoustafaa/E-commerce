@@ -50,7 +50,6 @@ export default function Ceckout() {
      const res = await OnlinePayment( 
        id,
        values,
-       "https://e-commerce-beta-six-61.vercel.app"
       )
      if(res.status=== "success"){
       window.location.href = res.session.url

@@ -18,13 +18,15 @@ function getBaseUrl() {
 export default async function OnlinePayment(
   CartID: string,
   formValues: CheckoutSchemaType,
-  url = "https://e-commerce-beta-six-61.vercel.app"){
+    ){
     const token = await MyToken()
         if(!token){
             throw new Error("Please login first")
         }
+          const baseUrl = getBaseUrl();
 
-        const res = await fetch(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${CartID}?url=${url}`,{
+
+        const res = await fetch(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${CartID}?url=${baseUrl}`,{
             method : "POST",
             headers: {
                 token: String(token),
