@@ -9,7 +9,10 @@ export default function AddWishlist({ id }: { id: string }) {
 
   async function AddWishList(id: string) {
     const res = await AddToWishlist(id);
-
+    if (!res || typeof res !== "object" || !("status" in res)) {
+      toast.error("please login to add products to your wishlist.", {position : 'top-center', duration: 2000})
+      return
+    }
     if (res.status === "success") {
       toast.success("Product added to wishlist successfully", {
         position: "top-center",

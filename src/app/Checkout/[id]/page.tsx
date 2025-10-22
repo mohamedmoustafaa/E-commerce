@@ -48,7 +48,6 @@ export default function Ceckout() {
     
 
      const res = await OnlinePayment(id , "" , values)
-     console.log(res);
      if(res.status=== "success"){
       window.location.href = res.session.url
      }
