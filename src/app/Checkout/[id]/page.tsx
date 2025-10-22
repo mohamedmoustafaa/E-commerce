@@ -38,7 +38,7 @@ export default function Ceckout() {
       const response = await CashPayment(id, values)
       console.log(response);
       if (response.status==="success") {
-          router.push("/allOrders"); // توجيه لصفحة All Orders
+          router.push("/allorders"); 
           toast.success("Order has been saved successfully", { position: "top-center", duration: 2000 });
         } else {
           toast.error("Your order doesn't ", { position: "top-center", duration: 2000 });
