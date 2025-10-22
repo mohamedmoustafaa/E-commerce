@@ -15,7 +15,10 @@ function getBaseUrl() {
    return `https://${process.env.VERCEL_URL || "e-commerce-beta-six-61.vercel.app"}`;
 }
 
-export default async function OnlinePayment(CartID : string , url = getBaseUrl() , formValues :CheckoutSchemaType){
+export default async function OnlinePayment(
+  CartID: string,
+  formValues: CheckoutSchemaType,
+  url = "https://e-commerce-beta-six-61.vercel.app"){
     const token = await MyToken()
         if(!token){
             throw new Error("Please login first")
