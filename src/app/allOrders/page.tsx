@@ -70,7 +70,6 @@ export default function AllOrdersPage() {
 
         let userId: string | null = null;
 
-        // ✅ استخدمنا TokenPayload بدل any
         if (typeof tokenData === "object" && tokenData !== null) {
           const tokenObj = tokenData as TokenPayload;
           userId = tokenObj.id || tokenObj.userId || tokenObj.sub || null;
