@@ -9,7 +9,7 @@ The app allows users to browse products, manage their shopping cart, and complet
 
 ## 🚀 Live Demo
 
-🔗 **[View Live Website](https://e-commerce-beta-six-61.vercel.app)**  
+🔗 **[View Live Website](https://e-commerce-eight-alpha-43.vercel.app)**  
 
 ---
 
