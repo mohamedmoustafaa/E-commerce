@@ -29,14 +29,12 @@ export default function Ceckout() {
 
   const [paymentMethod, setPaymentMethod] = React.useState<"online" | "cash" | null>(null);
    async function handleCheckout(values: CheckoutSchemaType){
-   console.log(values);
    if (!paymentMethod) {
       toast.error("please choose way of payment", { position: "top-center", duration: 2000 });
       return;
     }
     if (paymentMethod === "cash"){
       const response = await CashPayment(id, values)
-      console.log(response);
       if (response.status==="success") {
           router.push("/allorders"); 
           toast.success("Order has been saved successfully", { position: "top-center", duration: 2000 });

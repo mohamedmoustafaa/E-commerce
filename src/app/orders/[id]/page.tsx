@@ -74,7 +74,6 @@ export default function OrderDetailsPage() {
         setLoading(true);
         const token = await MyToken();
         
-        console.log('Fetching order:', orderId);
         
         const response = await fetch(`https://ecommerce.routemisr.com/api/v1/orders/${orderId}`, {
           headers: {

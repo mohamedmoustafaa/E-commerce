@@ -17,8 +17,7 @@ export default async function MyToken(){
    
    return token?.token || null
    }
-   catch(err){
-      console.log(err);
+   catch{
       
       return null
    }

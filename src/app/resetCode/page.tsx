@@ -25,7 +25,6 @@ export default function ResetCode() {
   })
 
   async function handleResetCode(values: ResetCodeSchemaType) {
-    console.log(values)
     try {
      const res = await axios.post(
         "https://ecommerce.routemisr.com/api/v1/auth/verifyResetCode",

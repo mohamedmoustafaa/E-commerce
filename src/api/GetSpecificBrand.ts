@@ -10,9 +10,8 @@ export default async function GetProductsByBrand(brandId: string) {
     }
 
     const data = await res.json();
-    return data.data; // المنتجات الخاصة بالبراند
-  } catch (error) {
-    console.error("Error fetching products by brand:", error);
+    return data.data; 
+  } catch  {
     return [];
   }
 }

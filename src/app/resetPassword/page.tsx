@@ -32,9 +32,6 @@ export default function ResetPassword() {
         return
       }
 
-      console.log("Reset Token:", token)
-      console.log("Email:", values.email)
-      console.log("New Password:", values.newPassword)
 
       const res = await axios.put(
         "https://ecommerce.routemisr.com/api/v1/auth/resetPassword",
@@ -50,16 +47,14 @@ export default function ResetPassword() {
         }
       )
 
-      console.log("Full Response:", res)
       if (res.status === 200 && res.data.token) {
         toast.success("Password reset successfully!", {
           position: "top-center",
           duration: 2000,
         })
 
-        localStorage.removeItem("resetToken") // امسح التوكن القديم
+        localStorage.removeItem("resetToken") 
 
-        // ✅ روح على صفحة اللوجن بعد ثانية
         setTimeout(() => {
           router.push("/login")
         }, 1200)
@@ -71,16 +66,11 @@ export default function ResetPassword() {
       }
     } catch (err: unknown) {
   if (axios.isAxiosError(err)) {
-    console.log("Full error details:", {
-      status: err.response?.status,
-      data: err.response?.data,
-      message: err.response?.data?.message,
-    });
+    
 
     const errorMessage = err.response?.data?.message || err.message || "Something went wrong";
     toast.error(errorMessage, { position: "top-center", duration: 3000 });
   } else {
-    console.log("Unexpected error:", err);
     toast.error("Something went wrong", { position: "top-center", duration: 3000 });
   }
 }

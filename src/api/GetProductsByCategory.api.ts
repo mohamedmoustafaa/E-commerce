@@ -5,9 +5,8 @@ export default async function GetProductsByCategory(categoryId: string) {
     });
 
     const data = await res.json();
-    return data.data; // لأن الـ API بيحط المنتجات داخل data.data
-  } catch (error) {
-    console.error("Error fetching products by category:", error);
+    return data.data; 
+  } catch  {
     return [];
   }
 }

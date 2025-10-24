@@ -32,7 +32,6 @@ export default function Cart() {
         setcartId(res.data._id);
       }
     } catch (err) {
-      console.log(err);
       setloading(false);
     }
   }
