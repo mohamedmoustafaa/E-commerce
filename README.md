@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<img width="949" height="440" alt="E-Commerce Banner" src="https://github.com/user-attachments/assets/10e231f8-9318-4063-a59f-7a8a914fb987" />
 
-## Getting Started
+# 🛍️ E-Commerce App
 
-First, run the development server:
+An advanced **E-Commerce web application** built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**, featuring **Stripe payment integration** and **Vercel deployment**.  
+The app allows users to browse products, manage their shopping cart, and complete secure online payments.
+
+---
+
+## 🚀 Live Demo
+
+🔗 **[View Live Website](https://e-commerce-eight-alpha-43.vercel.app)**  
+
+---
+
+## 📸 Screenshots
+
+| 🏠 Home Page | 🛒 Products | 💳 Checkout |
+|---------------|-------------|--------------|
+| <img src="https://github.com/user-attachments/assets/b6d57c04-59b6-4391-8c8d-0bc0b420783f" width="320" alt="Home Page"/> | <img src="https://i.postimg.cc/3r29K6vN/Screenshot-2025-10-23-044839.png" width="320" alt="Products Page"/> | <img src="https://i.postimg.cc/FRw9DzxM/Screenshot-2025-10-23-052530.png" width="320" alt="Checkout Page"/> |
+
+---
+
+## ⚙️ Features
+
+✅ Browse and search for products  
+✅ Filter items by category  
+✅ Add and remove products from the cart  
+✅ View detailed order history  
+✅ Secure online payment with **Stripe Checkout**  
+✅ User authentication via **JWT tokens**  
+✅ Fully responsive and mobile-friendly UI  
+✅ Deployed seamlessly on **Vercel**
+
+---
+
+## 🧰 Tech Stack
+
+| Category | Technologies |
+|-----------|--------------|
+| **Framework** | [Next.js 14](https://nextjs.org/) + [React 18](https://react.dev/) |
+| **Language** | [TypeScript](https://www.typescriptlang.org/) |
+| **Styling** | [Tailwind CSS](https://tailwindcss.com/) + [shadcn/ui](https://ui.shadcn.com/) |
+| **Payment Integration** | [Stripe](https://stripe.com/) |
+| **Deployment** | [Vercel](https://e-commerce-eight-alpha-43.vercel.app/) |
+| **API Source** | [RouteMisr E-Commerce API](https://ecommerce.routemisr.com/api/v1) |
+
+---
+
+## 🧩 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+src/
+├─ app/
+│  ├─ allorders/
+│  ├─ checkout/
+│  ├─ products/
+│  └─ ...
+├─ components/
+├─ api/
+├─ Utilities/
+└─ schema/
