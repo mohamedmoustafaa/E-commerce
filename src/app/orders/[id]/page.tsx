@@ -95,7 +95,7 @@ export default function OrderDetailsPage() {
           position: 'top-center', 
           duration: 3000 
         });
-        router.push('/allOrders');
+        router.push('/allorders');
       } finally {
         setLoading(false);
       }
