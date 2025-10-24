@@ -13,9 +13,14 @@ export default function CategorySwiper( {data} : {data: CategoryType[]} ) {
     <Swiper
       spaceBetween={0}
       slidesPerView={7}
-       modules={[Autoplay]}
-       autoplay = {{delay : 2000}}
-      
+      modules={[Autoplay]}
+      autoplay = {{delay : 2000}}
+      breakpoints={{
+        0: { slidesPerView: 2 },      // موبايل صغير
+        480: { slidesPerView: 3 },    // موبايل متوسط
+        768: { slidesPerView: 5 },    // تابلت
+        1024: { slidesPerView: 7 },   // ديسكتوب
+      }}
     >
       {data.map((category: CategoryType)=> <SwiperSlide key={category._id}>
           <Image width={200} height={400}  src={category.image} className='h-[150px] w-full object-cover' alt='test'/>

@@ -12,9 +12,9 @@ export default async function Products() {
  
 
   return <>
-   <div className="container w-[80%] mx-auto my-12">
+   <div className="flex flex-wrap justify-between gap-y-6  w-[90%] mx-auto my-12">
     <div className='flex flex-wrap'>
-    {data.map((currentProduct: ProductType)=> <div className='xl:w-1/5 w-full md:w-1/2 lg:w-1/4  hover:scale-105 hover:shadow-lg transition-all duration-300' key={currentProduct._id}>
+    {data.map((currentProduct: ProductType)=> <div className='w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5  hover:scale-105 hover:shadow-lg transition-all duration-300' key={currentProduct._id}>
     <SingleProducts product={currentProduct} />
        
     

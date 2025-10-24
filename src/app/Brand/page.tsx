@@ -26,9 +26,9 @@ export default function BrandsPage() {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center h-screen text-white">
-        Loading brands...
-      </div>
+       <div className='h-screen flex justify-center items-center'>
+        <div className="loader"></div>
+    </div>
     );
   }
 

@@ -19,19 +19,19 @@ export default async function BrandProducts({ params }: BrandProductsProps) {
         Products for this Brand
       </h2>
 
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-between gap-y-6">
         {products.length > 0 ? (
           products.map((product) => (
             <div
-              className="xl:w-1/5 w-full md:w-1/2 lg:w-1/4"
-              key={product._id} 
+              key={product._id}
+              className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-2 hover:scale-105 hover:shadow-lg transition-all duration-300"
             >
               <SingleProducts product={product} />
             </div>
           ))
         ) : (
           <p className="text-center text-gray-600 w-full">
-            No products found for this brand.
+            No products found for this brand....
           </p>
         )}
       </div>
