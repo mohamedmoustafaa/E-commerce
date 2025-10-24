@@ -169,7 +169,7 @@ export default function OrderDetailsPage() {
       <div className="container mx-auto px-4 py-8">
         <div className="text-center">
           <h1 className="text-2xl font-bold mb-4">Order Not Found</h1>
-          <Button onClick={() => router.push('/allOrders')}>
+          <Button onClick={() => router.push('/allorders')}>
             Back to Orders
           </Button>
         </div>
@@ -181,7 +181,7 @@ export default function OrderDetailsPage() {
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       <Button 
         variant="ghost" 
-        onClick={() => router.push('/allOrders')}
+        onClick={() => router.push('/allorders')}
         className="mb-6"
       >
         <ArrowLeft className="w-4 h-4 ml-2" />
