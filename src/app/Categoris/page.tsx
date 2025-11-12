@@ -50,7 +50,7 @@ export default function CategoriesPage() {
             key={category._id}
             className="group"
           >
-            <Card className="overflow-hidden rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border-0 bg-transparent">
+            <Card className="overflow-hidden rounded-xl shadow-sm hover:shadow-md  group-hover:scale-105 transition-transform duration-300 border-0 bg-transparent">
               <CardContent className="p-0">
                 <div className="relative h-64 w-full">
                   {category.image ? (
@@ -58,7 +58,7 @@ export default function CategoriesPage() {
                       src={category.image}
                       alt={category.name}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="object-cover"
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center bg-gray-200">

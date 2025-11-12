@@ -24,8 +24,8 @@ const numberOfCartIcon = cartContext?.numberOfCartIcon ?? 0;
   }
 
   return (
-    <nav className="bg-gray-100 border-gray-200 dark:bg-gray-900">
-      <div className="container w-full lg:w-[80%] mx-auto p-4 flex justify-between items-center">
+    <nav className="bg-gray-100 border-gray-200  dark:bg-gray-900">
+      <div className="container w-full lg:w-[80%]  mx-auto p-4 flex justify-between items-center">
         
         {/* Left Section */}
         <div className="flex items-center justify-between w-full lg:w-auto">
@@ -76,7 +76,7 @@ const numberOfCartIcon = cartContext?.numberOfCartIcon ?? 0;
                   </Link>
                 </li>
 
-                {/* Cart Icon 🛒 */}
+                {/* Cart Icon  */}
                 <li className='text-2xl relative'>
                   <Link href="/Cart">
                     <i className="text-gray-600 hover:text-emerald-600 fa-solid fa-cart-shopping"></i>

@@ -11,7 +11,7 @@ export default async function AllProducts() {
       <div className="flex flex-wrap justify-between gap-y-6">
         {data.map((currentProduct: ProductType) => (
           <div
-            className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 hover:scale-105 hover:shadow-lg transition-all duration-300"
+            className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 hover:scale-105 transition-all duration-300"
             key={currentProduct._id}
           >
             <SingleProducts product={currentProduct} />

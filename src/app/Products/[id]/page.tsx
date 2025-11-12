@@ -14,7 +14,7 @@ export default async function ProductDeatails({ params }: { params: Promise<{ id
 
   return (
     <>
-      {/* 🟢 Product Details Section */}
+      {/*  Product Details Section */}
       <div className="container w-[90%] mx-auto p-4 flex flex-col md:flex-row gap-6">
         {/* Product Image */}
         <div className="w-full md:w-1/3">
@@ -51,7 +51,7 @@ export default async function ProductDeatails({ params }: { params: Promise<{ id
           {related.data.map((currentProduct: ProductType) => (
             <div
               key={currentProduct._id}
-              className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 hover:scale-105 hover:shadow-lg transition-all duration-300"
+              className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 hover:scale-105  transition-all duration-300"
             >
               <SingleProducts product={currentProduct} />
             </div>
