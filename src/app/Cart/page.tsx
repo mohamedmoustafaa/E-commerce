@@ -110,13 +110,13 @@ export default function Cart() {
   return (
     <>
       {products.length > 0 ? (
-        <div className="w-[95%] sm:w-[90%] md:w-4/5 lg:w-2/3 mx-auto my-6">
+        <div className="pt-16 w-[95%] sm:w-[90%] md:w-4/5 lg:w-2/3 mx-auto my-6">
           <div className="shadow-md sm:rounded-lg p-2 sm:p-4 bg-white">
             <h1 className="text-2xl sm:text-3xl text-center font-bold my-4">
               Total price : {price} EGP
             </h1>
 
-            {/* ======= Table for desktop ======= */}
+            
             <div className="hidden md:block overflow-x-auto">
               <table className="w-full text-sm text-left text-gray-500">
                 <thead className="text-xs text-gray-700 uppercase bg-gray-50">
@@ -306,7 +306,7 @@ export default function Cart() {
           </Button>
         </div>
       ) : (
-        <h1 className="font-bold text-3xl text-center my-12">
+        <h1 className=" pt-16 font-bold text-3xl text-center my-12">
           No products to show!!!
         </h1>
       )}

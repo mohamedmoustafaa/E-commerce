@@ -91,7 +91,7 @@ export default function Wishlist() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen bg-gray-50 py-8 pt-25">
       <div className="container mx-auto px-4 max-w-5xl">
         <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
           My Wishlist

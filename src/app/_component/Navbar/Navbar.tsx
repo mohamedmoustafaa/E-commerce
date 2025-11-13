@@ -24,7 +24,7 @@ const numberOfCartIcon = cartContext?.numberOfCartIcon ?? 0;
   }
 
   return (
-    <nav className="bg-gray-100 border-gray-200  dark:bg-gray-900">
+    <nav className="bg-gray-100 border-gray-200 fixed top-0 left-0 z-50 w-full dark:bg-gray-900">
       <div className="container w-full lg:w-[80%]  mx-auto p-4 flex justify-between items-center">
         
         {/* Left Section */}

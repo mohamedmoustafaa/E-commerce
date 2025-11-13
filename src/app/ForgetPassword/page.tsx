@@ -46,7 +46,7 @@ export default function ForgetPassword() {
   }
 
   return (
-    <div className='w-1/2 mx-auto my-12'>
+    <div className=' pt-12 w-1/2 mx-auto my-12'>
       <h1 className='text-3xl font-bold text-center my-3'>Forget Password</h1>
 
       <Form {...form}>

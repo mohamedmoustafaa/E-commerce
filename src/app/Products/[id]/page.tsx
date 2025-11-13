@@ -15,7 +15,7 @@ export default async function ProductDeatails({ params }: { params: Promise<{ id
   return (
     <>
       {/*  Product Details Section */}
-      <div className="container w-[90%] mx-auto p-4 flex flex-col md:flex-row gap-6">
+      <div className="  container pt-20 w-[90%] mx-auto p-4 flex flex-col md:flex-row gap-6">
         {/* Product Image */}
         <div className="w-full md:w-1/3">
           <Image

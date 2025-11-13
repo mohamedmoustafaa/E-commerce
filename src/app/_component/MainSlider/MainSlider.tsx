@@ -12,8 +12,8 @@ import { Autoplay } from "swiper/modules";
 
 export default function MainSlider() {
   return (
-    <div className="w-[95%] sm:w-[85%] md:w-[80%] lg:w-[70%] mx-auto my-4 flex flex-col md:flex-row gap-2 md:gap-0">
-      {/* القسم الرئيسي للسلايدر */}
+    <div className=" pt-16 w-[95%] sm:w-[85%] md:w-[80%] lg:w-[70%] mx-auto my-4 flex flex-col md:flex-row gap-2 md:gap-0">
+       
       <div className="w-full md:w-3/4">
         <Swiper
           spaceBetween={0}

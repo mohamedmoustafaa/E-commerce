@@ -168,21 +168,17 @@ export default function AllOrdersPage() {
 
   if (loading) {
     return (
-      <div className="container mx-auto px-4 py-8 max-w-4xl">
-        {[...Array(3)].map((_, i) => (
-          <Card key={i} className="p-6">
-            <Skeleton className="h-12 w-12 rounded-full" />
-          </Card>
-        ))}
-      </div>
+      <div className='h-screen flex justify-center items-center'>
+        <div className="loader"></div>
+    </div>
     );
   }
 
   return (
-    <div className="container mx-auto px-4 py-8 max-w-4xl">
+    <div className="pt-20 container mx-auto px-4 py-8 max-w-4xl">
       {error && (
-        <Card className="p-6 mb-6 border-red-200 bg-red-50">
-          <div className="text-center">
+        <Card className="  p-6 mb-6 border-red-200 bg-red-50">
+          <div className=" text-center">
             <p className="text-red-600 font-semibold mb-3">{error}</p>
             <Button
               onClick={() => window.location.reload()}
@@ -197,7 +193,7 @@ export default function AllOrdersPage() {
       )}
 
       {!loading && orders.length === 0 && !error && (
-        <Card className="p-12 text-center border-dashed border-2 border-gray-300">
+        <Card className="pt-8 p-12 text-center border-dashed border-2 border-gray-300">
           <Package className="w-20 h-20 text-green-600 mx-auto mb-4" />
           <h3 className="text-2xl font-semibold text-gray-900 mb-3">
             No Orders Yet
@@ -215,11 +211,11 @@ export default function AllOrdersPage() {
         </Card>
       )}
 
-      <div className="space-y-6">
+      <div className="pt-8 space-y-6">
         {orders.map((order) => (
           <Card
             key={order._id}
-            className="p-6 hover:shadow-lg transition-all duration-300 border"
+            className="pt-16 p-6 hover:shadow-lg transition-all duration-300 border"
           >
             <div className="flex items-start justify-between">
               <div className="flex-1">

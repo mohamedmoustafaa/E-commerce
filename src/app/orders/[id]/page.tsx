@@ -106,7 +106,6 @@ export default function OrderDetailsPage() {
     }
   }, [orderId, router]);
 
-  // Safe data access functions
   const getOrderId = () => {
     return order?._id ? `#${order._id.slice(-6).toUpperCase()}` : '#N/A';
   };
@@ -144,22 +143,13 @@ export default function OrderDetailsPage() {
   };
 
   const getProducts = () => {
-    return order?.cartItems || []; // التغيير هنا
+    return order?.cartItems || [];
   };
 
   if (loading) {
     return (
-      <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <Skeleton className="h-6 w-32 mb-6" />
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {[...Array(4)].map((_, i) => (
-            <Card key={i} className="p-6">
-              <Skeleton className="h-6 w-32 mb-4" />
-              <Skeleton className="h-4 w-full mb-2" />
-              <Skeleton className="h-4 w-3/4" />
-            </Card>
-          ))}
-        </div>
+      <div className='h-screen flex justify-center items-center'>
+        <div className="loader"></div>
       </div>
     );
   }
@@ -178,7 +168,7 @@ export default function OrderDetailsPage() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8 max-w-4xl">
+    <div className="pt-24 container mx-auto px-4 py-8 max-w-4xl">
       <Button 
         variant="ghost" 
         onClick={() => router.push('/allorders')}
