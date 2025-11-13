@@ -33,11 +33,9 @@ export default function CategoriesPage() {
 
   if (loading) {
     return (
-      <div className="container mx-auto px-4 py-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-        {[...Array(8)].map((_, i) => (
-          <Skeleton key={i} className="h-64 w-full rounded-lg" />
-        ))}
-      </div>
+      <div className='h-screen flex justify-center items-center'>
+        <div className="loader"></div>
+    </div>
     );
   }
 
