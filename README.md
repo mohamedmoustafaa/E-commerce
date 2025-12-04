@@ -1,4 +1,4 @@
-<img width="949" height="440" alt="E-Commerce Banner" src="https://github.com/user-attachments/assets/10e231f8-9318-4063-a59f-7a8a914fb987" />
+<img width="949" height="440" alt="E-Commerce Banner" src="https://i.postimg.cc/NMGBgHWn/Screenshot-2025-12-05-010842.png" />
 
 # 🛍️ E-Commerce App
 
