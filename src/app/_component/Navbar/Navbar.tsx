@@ -30,7 +30,7 @@ const numberOfCartIcon = cartContext?.numberOfCartIcon ?? 0;
         {/* Left Section */}
         <div className="flex items-center justify-between w-full lg:w-auto">
           <Link href="/" className="text-2xl font-semibold flex items-center gap-2 text-emerald-600">
-            <i className="fa-solid fa-cart-shopping"></i> Freshcart
+            <i className="fa-solid fa-cart-shopping"></i> Cartify
           </Link>
 
           {/* Hamburger Icon (mobile only) */}
