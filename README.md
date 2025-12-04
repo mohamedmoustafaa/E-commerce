@@ -17,7 +17,7 @@ The app allows users to browse products, manage their shopping cart, and complet
 
 | 🏠 Home Page | 🛒 Products | 💳 Checkout |
 |---------------|-------------|--------------|
-| <img src="https://github.com/user-attachments/assets/b6d57c04-59b6-4391-8c8d-0bc0b420783f" width="320" alt="Home Page"/> | <img src="https://i.postimg.cc/3r29K6vN/Screenshot-2025-10-23-044839.png" width="320" alt="Products Page"/> | <img src="https://i.postimg.cc/FRw9DzxM/Screenshot-2025-10-23-052530.png" width="320" alt="Checkout Page"/> |
+| <img src="https://github.com/user-attachments/assets/b6d57c04-59b6-4391-8c8d-0bc0b420783f" width="320" alt="Home Page"/> | <img src="https://i.postimg.cc/x8KwMTDs/Screenshot-2025-12-05-013323.png" width="320" alt="Products Page"/> | <img src="https://i.postimg.cc/CKqmzrVv/Screenshot-2025-12-05-013628.png" width="320" alt="Checkout Page"/> |
 
 ---
 
