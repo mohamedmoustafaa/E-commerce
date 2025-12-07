@@ -38,7 +38,7 @@ The app allows users to browse products, manage their shopping cart, and complet
 
 | Category | Technologies |
 |-----------|--------------|
-| **Framework** | [Next.js 15](https://nextjs.org/) + [React 18](https://react.dev/) |
+| **Framework** | [Next.js 14](https://nextjs.org/) + [React 18](https://react.dev/) |
 | **Language** | [TypeScript](https://www.typescriptlang.org/) |
 | **Styling** | [Tailwind CSS](https://tailwindcss.com/) + [shadcn/ui](https://ui.shadcn.com/) |
 | **Payment Integration** | [Stripe](https://stripe.com/) |
